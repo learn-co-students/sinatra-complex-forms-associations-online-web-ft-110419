@@ -1,1 +1,15 @@
-show.erb
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show</title>
+  </head>
+  <body>
+    <h1><%= @pet.name %></h1>
+    <h1><%= @pet.owner.name %></h1>
+    <form action="/pets/<%=@pet.id%>/edit" method="get">
+      <h2>Edit said pet?</h2>
+      <input type="submit" name="submit" value="Edit Pet">
+    </form>
+  </body>
+</html>
