@@ -1,1 +1,8 @@
 show.erb
+
+<body>
+    <p><%=@pet.name%> Is this cats name </p>
+    <p> This pet belongs to the owner <%=@pet.owner.name%></p>
+
+    <a href="/pets/<%=@pet.id%>/edit">Edit Pet</a>
+</body>
